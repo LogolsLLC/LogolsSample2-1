@@ -5,15 +5,15 @@ namespace Exercise_1
     class Program
     {
     static void Main(string[] args)
-        {
-            Console.WriteLine("A status report is needed of all government employees");
-            int status = 4;
-             /*for(int counter=0; counter<statuses.Length;counter++ */
+    {
+        /*A status report is needed of all government employees")*/
+          int[] statuses = {1,2,3,4};
+            
+            for(int count = 0; count < statuses.Length;count++)
             {
-           /* status = statuses[counter];*/
-            if (status == 1)
-            {Console.WriteLine("Status:Alive");
-            } 
+                int status = statuses[count];
+              if (status == 1)
+             {Console.WriteLine("Status:Alive") ;}
             else if(status == 2)
             {Console.WriteLine("Status:Zombie"); }
             else if(status == 3)
@@ -21,12 +21,14 @@ namespace Exercise_1
             else if(status == 4)
             {Console.WriteLine("Status:Unknown");}
             }
-           /* int counter=0;
-            while(counter<status.Length)
-            {Console.WriteLine(status[counter]);
-            }*/
             
-           /* switch (value)
+           /* int[] status = new int[] {1,2,3,4};
+            int count = 0;
+            while(count<status.Length)
+            {Console.WriteLine(status[count].ToString());counter++;
+            }*/
+             /*          
+            switch (status)
             {
             case 1:
             Console.WriteLine("Alive");
@@ -40,8 +42,8 @@ namespace Exercise_1
             case 4:
             Console.WriteLine("Unknown");
             break;
-            }
-            */
+            }    */        
         } 
-    }    
-}
+    }   
+
+} 
